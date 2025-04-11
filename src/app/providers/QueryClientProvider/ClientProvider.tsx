@@ -9,5 +9,3 @@ export function ClientProvider({ children }: ReactNode) {
         <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     );
 }
-
-export { QueryClient };
