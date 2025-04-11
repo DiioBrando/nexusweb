@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db09e991-9631-4783-9d9f-8e0a03942eb9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/providers/QueryClientProvider/ClientProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/providers/QueryClientProvider/config.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/providers/QueryClientProvider/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/providers/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +36,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2vZtNNJwLuISDxLMDLDhRcKsMsu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +74,7 @@
       <workItem from="1744366201736" duration="926000" />
       <workItem from="1744367139787" duration="31000" />
       <workItem from="1744367180397" duration="21000" />
-      <workItem from="1744367206988" duration="3199000" />
+      <workItem from="1744367206988" duration="13811000" />
     </task>
     <servers />
   </component>
