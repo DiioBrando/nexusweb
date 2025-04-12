@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db09e991-9631-4783-9d9f-8e0a03942eb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/menubar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/home-page/HomePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/LogoIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/svg/CircleIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/CircleIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/home-page/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/home-page/HomePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -89,7 +82,7 @@
       <workItem from="1744367139787" duration="31000" />
       <workItem from="1744367180397" duration="21000" />
       <workItem from="1744367206988" duration="14271000" />
-      <workItem from="1744463293243" duration="2653000" />
+      <workItem from="1744463293243" duration="4718000" />
     </task>
     <servers />
   </component>
