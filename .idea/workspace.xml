@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db09e991-9631-4783-9d9f-8e0a03942eb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/svg/LogoIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/home-page/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/home-page/HomePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,12 +82,23 @@
       <workItem from="1744367139787" duration="31000" />
       <workItem from="1744367180397" duration="21000" />
       <workItem from="1744367206988" duration="14271000" />
-      <workItem from="1744463293243" duration="4718000" />
+      <workItem from="1744463293243" duration="9818000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
