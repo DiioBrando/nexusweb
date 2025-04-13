@@ -7,7 +7,7 @@ import {
     MenubarShortcut,
     MenubarTrigger,
 } from "@/components/menubar"
-import {CircleIcon} from "../../public/svg/CircleIcon";
+import {CircleIcon} from "@/components/ui/CircleIcon";
 import {MenuIcon} from "lucide-react";
 import Link from "next/link";
 

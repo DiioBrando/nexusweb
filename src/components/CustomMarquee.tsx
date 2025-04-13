@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 import {ComponentPropsWithoutRef} from "react";
-import {CircleIcon} from "../../public/svg/CircleIcon";
+import {CircleIcon} from "./ui/CircleIcon";
 
 type ICustomMarquee = ComponentPropsWithoutRef<typeof Marquee>;
 

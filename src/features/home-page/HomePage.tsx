@@ -1,10 +1,12 @@
 import {CustomMarquee} from "@/components/CustomMarquee";
 import {BrandingLabel} from "@/components/BrandingLabel";
+import {TransparentLetter} from "@/components/ui/TransparentLetter";
 
 export const HomePage = () => {
     return (
         <div className={'h-full w-full relative overflow-hidden'}>
             <BrandingLabel/>
+
             <div className={'-z-10'}>
                 <div className={'absolute bottom-0 -rotate-[12.95deg] origin-bottom-left z-20'}>
                     <CustomMarquee className={'bg-neutral-900 h-[60px]'}/>
