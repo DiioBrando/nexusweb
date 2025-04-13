@@ -20,7 +20,7 @@ export const Header = () => {
                 RU
             </div>
             <div className={'text-3xl'}>
-                NEXUSWEB
+                NEXUS WEB
             </div>
             <Menubar>
                 <MenubarMenu>
