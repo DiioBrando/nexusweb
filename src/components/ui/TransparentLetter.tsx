@@ -1,7 +1,7 @@
 type TransparentLetterProps = {
     text: string;
-    width?: number;
-    height?: number;
+    width?: number | string | undefined;
+    height?: number | string | undefined;
     fontSize?: number;
     strokeColor?: string;
     strokeWidth?: number;
