@@ -1,12 +1,14 @@
 import {BrandingLabel} from "@/components/BrandingLabel";
 import {TransparentLetter} from "@/components/ui/TransparentLetter";
+import Image from 'next/image'
+import Link from "next/link";
 
 export const PortfolioPage = () => {
     return (
         <div className={'h-full w-full relative overflow-hidden'}>
             <BrandingLabel/>
             <div className={'w-full h-full z-40 mx-20 mt-20 flex'}>
-                <div className={'flex flex-col items-center translate-y-[-40px]'}>
+                <div className={'flex flex-col items-center translate-y-[50px] h-fit'}>
                     <div className={'text-[25px] uppercase'}>
                         Portfolio
                         <hr className={'w-[38px]'}/>
@@ -20,8 +22,15 @@ export const PortfolioPage = () => {
                         strokeColor={'gray'}
                     />
                 </div>
-                <div className={'translate-y-[70px] uppercase max-w-2/3 flex gap-5'}>
-
+                <div className={'translate-y-[50px] uppercase max-w-2/3 flex gap-1.5 h-fit overflow-x-auto scrollbar-transparent'}>
+                    <div className={'w-[400px] h-[400px] flex flex-col items-center text-center'}>
+                        <Image src={''} height={300} width={300} alt={'image ui/ux'}/>
+                        <h1 className={'hover:underline hover:text-gray-500 cursor-pointer normal-case text-lg'}>
+                            <Link href={''}>
+                            </Link>
+                        </h1>
+                        <p className={'text-xs'}></p>
+                    </div>
                 </div>
             </div>
             <div className={'-z-10'}>
