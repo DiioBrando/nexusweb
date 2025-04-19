@@ -2,8 +2,11 @@ import {BrandingLabel} from "@/components/BrandingLabel";
 import {TransparentLetter} from "@/components/ui/TransparentLetter";
 import Image from 'next/image'
 import Link from "next/link";
+import {usePortfolio} from "@/features/portfolio/api/usePortfolio";
+import {Loader} from "../../../../public/svg/Loader";
 
 export const PortfolioPage = () => {
+    const { isFetching, data, isError} = usePortfolio();
     return (
         <div className={'h-full w-full relative overflow-hidden'}>
             <BrandingLabel/>
@@ -23,14 +26,17 @@ export const PortfolioPage = () => {
                     />
                 </div>
                 <div className={'translate-y-[50px] uppercase max-w-2/3 flex gap-1.5 h-fit overflow-x-auto scrollbar-transparent'}>
-                    <div className={'w-[400px] h-[400px] flex flex-col items-center text-center'}>
-                        <Image src={''} height={300} width={300} alt={'image ui/ux'}/>
+                    {isFetching? <Loader/>:
+                        data?.data && data?.data.map((project, index) => <div key={index} className={'w-[400px] h-[400px] flex flex-col items-center text-center'}>
+                        <Image src={process.env.NEXT_PUBLIC_API_DATABASE_URL + project.pic} height={300} width={300} alt={'image ui/ux'}/>
                         <h1 className={'hover:underline hover:text-gray-500 cursor-pointer normal-case text-lg'}>
-                            <Link href={''}>
+                            <Link href={project.href}>
+                                {project.name}
                             </Link>
                         </h1>
-                        <p className={'text-xs'}></p>
-                    </div>
+                        <p className={'text-xs'}>{project.title}</p>
+                    </div>)
+                }
                 </div>
             </div>
             <div className={'-z-10'}>
