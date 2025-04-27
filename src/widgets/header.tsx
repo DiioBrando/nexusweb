@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export const Header = () => {
     return (
-        <header className={'flex justify-between items-center py-4 px-12'}>
+        <header className={'flex justify-between items-center py-4 px-9'}>
             <div className={'flex items-center gap-2'}>
                 EN
                 <CircleIcon fill={'blue'}/>
@@ -30,19 +30,19 @@ export const Header = () => {
                     </MenubarTrigger>
                     <MenubarContent className={'z-50'}>
                         <MenubarItem>
-                            <Link href={'/'}>Home</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/'}>Home</Link>
                         </MenubarItem>
                         <MenubarSeparator />
                         <MenubarItem>
-                            <Link href={'/about'}>About Us</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/about'}>About Us</Link>
                         </MenubarItem>
                         <MenubarSeparator />
                         <MenubarItem>
-                            <Link href={'/service'}>Service</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/service'}>Service</Link>
                         </MenubarItem>
                         <MenubarSeparator />
                         <MenubarItem>
-                            <Link href={'/portfolio'}>Portfolio</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/portfolio'}>Portfolio</Link>
                         </MenubarItem>
                     </MenubarContent>
                 </MenubarMenu>
