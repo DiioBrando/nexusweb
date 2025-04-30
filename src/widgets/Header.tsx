@@ -1,3 +1,4 @@
+'use client';
 import {
     Menubar,
     MenubarContent,
@@ -10,39 +11,41 @@ import {
 import {CircleIcon} from "@/components/ui/CircleIcon";
 import {MenuIcon} from "lucide-react";
 import Link from "next/link";
+import {useLanguage} from "@/shared/hooks/useLanguage";
 
 export const Header = () => {
+    const {t, setLanguage} = useLanguage();
     return (
         <header className={'flex justify-between items-center py-4 px-9'}>
             <div className={'flex items-center gap-2'}>
-                EN
+                <button onClick={() => setLanguage('en')}>EN</button>
                 <CircleIcon fill={'blue'}/>
-                RU
+                <button onClick={() => setLanguage('ru')}>RU</button>
             </div>
             <div className={'text-3xl'}>
                 NEXUS WEB
             </div>
             <Menubar>
                 <MenubarMenu>
-                    <MenubarTrigger className={'flex gap-2'}>
-                        MENU
+                    <MenubarTrigger className={'flex gap-2 uppercase'}>
+                        {t('Menu.menu')}
                         <MenuIcon/>
                     </MenubarTrigger>
                     <MenubarContent className={'z-50'}>
                         <MenubarItem>
-                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/'}>Home</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse first-letter:uppercase'} href={'/'}>{t('Menu.home')}</Link>
                         </MenubarItem>
                         <MenubarSeparator />
                         <MenubarItem>
-                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/about'}>About Us</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse first-letter:uppercase'} href={'/about'}>{t('Menu.about')}</Link>
                         </MenubarItem>
                         <MenubarSeparator />
                         <MenubarItem>
-                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/service'}>Service</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse first-letter:uppercase'} href={'/service'}>{t('Menu.service')}</Link>
                         </MenubarItem>
                         <MenubarSeparator />
                         <MenubarItem>
-                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse'} href={'/portfolio'}>Portfolio</Link>
+                            <Link className={'w-full hover:text-gray-500 hover:animate-pulse first-letter:uppercase'} href={'/portfolio'}>{t('Menu.portfolio')}</Link>
                         </MenubarItem>
                     </MenubarContent>
                 </MenubarMenu>

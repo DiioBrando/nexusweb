@@ -6,7 +6,7 @@ import ru from '../../../../public/locales/ru/translation.json'
 
 i18next.use(LanguageDetector).use(initReactI18next).init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     defaultNS: 'translation',
     supportedLngs: ['en', 'ru'],
     resources: {

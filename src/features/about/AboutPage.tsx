@@ -1,14 +1,17 @@
+'use client';
 import {BrandingLabel} from "@/components/BrandingLabel";
 import {TransparentLetter} from "@/components/ui/TransparentLetter";
+import {useLanguage} from "@/shared/hooks/useLanguage";
 
 export const AboutPage = () => {
+    const {t} = useLanguage();
     return (
         <div className={'h-full w-full relative overflow-hidden'}>
-            <BrandingLabel/>
+            <BrandingLabel t={t}/>
             <div className={'w-full h-full z-40 mx-20 mt-20 flex'}>
                 <div className={'flex flex-col items-center translate-y-[-40px]'}>
                     <div className={'text-[25px] uppercase'}>
-                        About Us
+                        {t('AboutPage.about')}
                         <hr className={'w-[38px]'}/>
                     </div>
                     <TransparentLetter
@@ -21,13 +24,12 @@ export const AboutPage = () => {
                     />
                 </div>
                 <div className={'translate-y-[70px] uppercase max-w-2/3 flex flex-col gap-5'}>
-                    <h1 className={'text-[40px]'}>we are a digital production team.</h1>
+                    <h1 className={'text-[40px]'}>{t('AboutPage.h1')}</h1>
                     <p className={'text-[30px]'}>
-                        Gleamy is a leading design & software development agency based in berlin.
-                        We help startups & Fortune 500 companies delight humans on the other side of the screen.
+                        {t('AboutPage.p')}
                     </p>
                     <div>
-                        <h2>Contact Us:</h2>
+                        <h2>{t('AboutPage.contact')}:</h2>
                         <p>Telegram -</p>
                         <p>Email -</p>
                         <p>Phone -</p>

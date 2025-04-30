@@ -1,19 +1,22 @@
+'use client';
 import {BrandingLabel} from "@/components/BrandingLabel";
 import {TransparentLetter} from "@/components/ui/TransparentLetter";
 import Image from 'next/image'
 import Link from "next/link";
 import {usePortfolio} from "@/features/portfolio/api/usePortfolio";
 import {Loader} from "../../../../public/svg/Loader";
+import {useLanguage} from "@/shared/hooks/useLanguage";
 
 export const PortfolioPage = () => {
     const { isFetching, data, isError} = usePortfolio();
+    const {t} = useLanguage();
     return (
         <div className={'h-full w-full relative overflow-hidden'}>
-            <BrandingLabel/>
+            <BrandingLabel t={t}/>
             <div className={'w-full h-full z-40 mx-20 mt-20 flex'}>
                 <div className={'flex flex-col items-center translate-y-[50px] h-fit'}>
                     <div className={'text-[25px] uppercase'}>
-                        Portfolio
+                        {t('PortfolioPage.portfolio')}
                         <hr className={'w-[38px]'}/>
                     </div>
                     <TransparentLetter

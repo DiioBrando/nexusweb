@@ -1,14 +1,17 @@
+'use client';
 import {BrandingLabel} from "@/components/BrandingLabel";
 import {TransparentLetter} from "@/components/ui/TransparentLetter";
+import {useLanguage} from "@/shared/hooks/useLanguage";
 
 export const ServicePage = () => {
+    const {t} = useLanguage();
     return (
         <div className={'h-full w-full relative overflow-hidden'}>
-            <BrandingLabel/>
+            <BrandingLabel t={t}/>
             <div className={'w-full h-full z-40 mx-10 mt-20 flex'}>
                 <div className={'flex flex-col items-center translate-y-[-40px]'}>
                     <div className={'text-[25px] uppercase'}>
-                        Service
+                        {t('ServicePage.service')}
                         <hr className={'w-[38px]'}/>
                     </div>
                     <TransparentLetter
@@ -22,34 +25,25 @@ export const ServicePage = () => {
                 </div>
                 <div className={'translate-y-[70px] uppercase max-w-2/3 flex gap-5'}>
                     <div>
-                        <h1 className={'text-[32px]'}>Brand Identity.</h1>
+                        <h1 className={'text-[30px]'}>{t('ServicePage.identity.h1')}</h1>
                         <p className={'text-[16px] my-2'}>
-                            Bringing the history of your brand to the
-                            forefront gives an emotional dimension to your
-                            visual identity, which is essential today more
-                            than ever in today's digital landscape.
+                            {t('ServicePage.identity.title')}
                         </p>
-                        <p className={'my-2 cursor-pointer hover:underline'}>Know More</p>
+                        <p className={'my-2 cursor-pointer hover:underline'}>{t('ServicePage.identity.more')}</p>
                     </div>
                     <div>
-                    <h2 className={'text-[32px]'}>Technology.</h2>
+                    <h2 className={'text-[30px]'}>{t('ServicePage.technology.h1')}</h2>
                         <p className={'text-[16px] my-2'}>
-                            Bringing the history of your brand to the
-                            forefront gives an emotional dimension to your
-                            visual identity, which is essential today more
-                            than ever in today's digital landscape.
+                            {t('ServicePage.technology.title')}
                         </p>
-                        <p className={'my-2 cursor-pointer hover:underline'}>Know More</p>
+                        <p className={'my-2 cursor-pointer hover:underline'}>{t('ServicePage.technology.more')}</p>
                     </div>
                     <div>
-                    <h3 className={'text-[32px]'}>UX/UI Design.</h3>
+                    <h3 className={'text-[30px]'}>{t('ServicePage.design.h1')}</h3>
                         <p className={'text-[16px] my-2'}>
-                            Bringing the history of your brand to the
-                            forefront gives an emotional dimension to your
-                            visual identity, which is essential today more
-                            than ever in today's digital landscape.
+                            {t('ServicePage.design.title')}
                         </p>
-                        <p className={'my-2 cursor-pointer hover:underline'}>Know More</p>
+                        <p className={'my-2 cursor-pointer hover:underline'}>{t('ServicePage.design.more')}</p>
                     </div>
                 </div>
             </div>
