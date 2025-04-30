@@ -1,9 +1,43 @@
 {
-  "home": {
+  "HomePage": {
+    "home": "home",
     "brand": "Brand.",
     "design": "Design",
     "product": "Product",
     "development": "In-House Development.",
     "more": "&More"
+  },
+  "AboutPage": {
+    "about": "about us",
+    "h1": "we are a digital production team.",
+    "p": "Gleamy is a leading design & software development agency based in berlin. We help startups & Fortune 500 companies delight humans on the other side of the screen."
+  },
+  "ServicePage": {
+    "service": "service",
+    "identity": {
+      "h1": "Brand Identity.",
+      "title": "Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape.",
+      "more": "show more"
+    },
+    "Technology": {
+      "h1": "Technology.",
+      "title": "Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape.",
+      "more": "show more"
+    },
+    "UX/UI Design.": {
+      "h1": "UX/UI Design.",
+      "title": "Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape.",
+      "more": "show more"
+    }
+  },
+  "PortfolioPage": {
+    "portfolio": "portfolio"
+  },
+  "Menu": {
+    "menu": "menu",
+    "home": "home",
+    "about": "about us",
+    "service": "service",
+    "portfolio": "portfolio"
   }
 }
