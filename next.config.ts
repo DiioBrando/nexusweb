@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
                 port: "5001",
                 pathname: "/uploads/**",
             },
+            {
+                protocol: "https",
+                hostname: "nexusweb-backend.vercel.app",
+                pathname: "/uploads/**",
+            },
         ],
     },
     env: {
