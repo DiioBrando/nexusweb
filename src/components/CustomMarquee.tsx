@@ -1,13 +1,17 @@
 import Marquee from "react-fast-marquee";
-import {ComponentPropsWithoutRef} from "react";
+import {ComponentPropsWithoutRef, ReactNode} from "react";
 import {CircleIcon} from "./ui/CircleIcon";
 
 type ICustomMarquee = ComponentPropsWithoutRef<typeof Marquee>;
 
-export const CustomMarquee = ({ children, classNameTXT, t,...rest }: ICustomMarquee) => {
+interface ICustomMarqueeProps extends ICustomMarquee {
+    classNameTXT: string;
+    t: (s: string) => string;
+}
+
+export const CustomMarquee = ({ classNameTXT, t,...rest }: ICustomMarqueeProps) => {
     return (
         <Marquee {...rest}>
-            {children}
             <div className={'flex gap-5 items-center'}>
                 <div className={'text-3xl ' + classNameTXT}>{t('Marquee.creative')}</div>
                 <CircleIcon fill={'blue'}/>

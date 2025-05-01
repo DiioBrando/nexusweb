@@ -1,6 +1,6 @@
 import { LogoIcon } from "../../public/svg/LogoIcon";
 
-export const BrandingLabel = ({ t }) => {
+export const BrandingLabel = ({ t }: {t: (s: string) => string}) => {
     return (
         <div className={'relative max-w-max'}>
             <div className={'relative'}>
