@@ -16,18 +16,18 @@ import {useLanguage} from "@/shared/hooks/useLanguage";
 export const Header = () => {
     const {t, setLanguage} = useLanguage();
     return (
-        <header className={'flex justify-between items-center py-4 px-9'}>
-            <div className={'flex items-center gap-2'}>
+        <header className={'flex justify-between items-center md:py-4 md:px-9 px-4'}>
+            <div className={'flex items-center gap-2 text-[12px] md:text-[15px]'}>
                 <button onClick={() => setLanguage('en')}>EN</button>
                 <CircleIcon fill={'blue'}/>
                 <button onClick={() => setLanguage('ru')}>RU</button>
             </div>
-            <div className={'text-3xl'}>
+            <div className={'text-[15px] md:text-3xl'}>
                 NEXUS WEB
             </div>
             <Menubar>
                 <MenubarMenu>
-                    <MenubarTrigger className={'flex gap-2 uppercase'}>
+                    <MenubarTrigger className={'flex gap-2 uppercase text-[12px] md:text-[15px]'}>
                         {t('Menu.menu')}
                         <MenuIcon/>
                     </MenubarTrigger>
